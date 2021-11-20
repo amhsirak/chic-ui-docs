@@ -170,5 +170,4 @@ import { Button } from 'chic-ui';
     <td></td>
     <td>If `as` is added, button becomes a custom html node specified in `as`</td>
   </tr>
-
-  </table>
+</table>
