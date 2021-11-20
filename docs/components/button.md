@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Buttons
+# Button
 
 Custom buttons with different types and sizes are available.
 

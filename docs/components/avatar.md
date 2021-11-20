@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Avatars
+# Avatar
 
 ### Image Avatars
 
