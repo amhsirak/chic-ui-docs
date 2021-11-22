@@ -22,8 +22,7 @@ const FeatureList = [
     title: 'Open-Source 💗',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        See something wrong or unclear? Want to make the library better? Contribute to <a href='https://karishmashuklaa.github.io/chic-ui'>Chic UI</a> right away on <a href='https://karishmashuklaa.github.io/chic-ui-docs'>GitHub!</a>💗
       </>
     ),
   },
@@ -33,7 +32,7 @@ function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3 className={styles.title}>{title}</h3>
         <p>{description}</p>
       </div>
     </div>

@@ -5,7 +5,8 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.title {
+  color: #cf4aae;
+  font-size: 24px;
+  font-weight: 700;
 }

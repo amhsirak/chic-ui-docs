@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Chic UI',
   tagline: 'Simple and Lightweight UI Component Library for React',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://karishmashuklaa.github.io/chic-ui-docs',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'karishmashuklaa', // Usually your GitHub org/user name.
-  projectName: 'chic-ui', // Usually your repo name.
+  organizationName: 'karishmashuklaa', 
+  projectName: 'chic-ui', 
 
   presets: [
     [
@@ -21,7 +21,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/karishmashuklaa/chic-ui',
         },
         theme: {
@@ -48,6 +47,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://www.npmjs.com/package/chic-ui',
+            label: 'NPM',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -60,6 +64,10 @@ const config = {
                 label: 'Get Started',
                 to: '/docs/intro',
               },
+              {
+                label: 'Components',
+                to: '/docs/components/alert',
+              },
             ],
           },
           {
@@ -69,19 +77,27 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/karishmashuklaa/chic-ui',
               },
+              {
+                label: 'NPM',
+                href: 'https://www.npmjs.com/package/chic-ui',
+              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Documentation Source',
+                href: 'https://github.com/karishmashuklaa/chic-ui-docs',
+              },
+              {
+                label: 'Library Source',
+                href: 'https://github.com/karishmashuklaa/chic-ui',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Chic UI. Built by Karishma Shukla`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa/chic-ui'>Chic UI</a>. Built by <a href='https://github.com/karishmashuklaa'>Karishma Shukla</a> and <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
       },
       prism: {
         theme: lightCodeTheme,
