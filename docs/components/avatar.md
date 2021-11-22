@@ -10,11 +10,11 @@ Get image avatars by simply using the `src` prop.
 
 import { Avatar } from 'chic-ui';
 
-<div className="btn-group">
+<>
     <Avatar className='single' src='https://wallpaperaccess.com/full/32048.jpg' />
     <Avatar className='single' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNO3U161Gmfn4tpmvDt3j-5wQlY4CsKulAw&usqp=CAU' />
     <Avatar className='single' src='https://i.pinimg.com/originals/75/a0/5d/75a05da75d10f296932d060773fe7447.jpg' />
-</div>
+</>
 
 ```jsx
 import React from 'react';
@@ -65,10 +65,10 @@ import { Avatar } from 'chic-ui';
 
 <table>
   <tr>
-     <td>Name</td>
-     <td>Type</td>
-     <td>Default</td>
-     <td>Description</td>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
   </tr>
   <tr>
     <td>src</td>

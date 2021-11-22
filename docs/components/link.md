@@ -43,10 +43,10 @@ import { Link } from 'chic-ui';
 
 <table>
   <tr>
-     <td>Name</td>
-     <td>Type</td>
-     <td>Default</td>
-     <td>Description</td>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
   </tr>
   <tr>
     <td>href (required)</td>

@@ -5,25 +5,21 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Simple and Lightweight',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Chic UI is simple to use and lightweight. Say no to bulky bundles!
-      </>
+      <>Chic UI is simple to use and lightweight. Say no to bulky bundles!</>
     ),
   },
   {
     title: 'TypeScript Support',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Chic UI is almost fully TypeScript supported! Use TypeScript with super ease.
+        Chic UI is almost fully TypeScript supported! Use TypeScript with super
+        ease.
       </>
     ),
   },
   {
     title: 'Open-Source 💗',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -33,12 +29,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
-      {/* <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
-      </div> */}
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
