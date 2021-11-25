@@ -1,4 +1,7 @@
 # Chic UI Documentation
 **Official Documentation for Chic UI**
 
-### Deployment
+**Chic UI is a lightweight UI Component Library for React.**
+
+
+## Contribution Guidelines
