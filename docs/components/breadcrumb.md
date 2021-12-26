@@ -29,3 +29,30 @@ import { Avatar } from 'chic-ui';
   </div>
 </Breadcrumb>
 ```
+
+### Props
+
+```
+import { Breadcrumb } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>separator</td>
+    <td>ReactNode | string</td>
+    <td></td>
+    <td>Adds a separator between in the links</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>any</td>
+    <td></td>
+    <td>Add styles to the breadcrumb</td>
+  </tr>
+</table>
