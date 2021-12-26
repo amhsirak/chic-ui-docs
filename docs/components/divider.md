@@ -37,3 +37,30 @@ import { Divider } from 'chic-ui';
  <Divider type="warning" dashed />
 <>
 ```
+
+### Props
+
+```
+import { Divider } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'secondary'</td>
+    <td>Type of Divider</td>
+  </tr>
+  <tr>
+    <td>dashed</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Get dashed style dividers</td>
+  </tr>
+</table>
