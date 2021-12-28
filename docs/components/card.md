@@ -157,3 +157,21 @@ import { Card } from 'chic-ui';
     <td>Add texts to links</td>
   </tr>
 </table>
+
+```
+import { CardGroup } from 'chic-ui';
+```
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>children</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Pass children</td>
+  </tr>
+</table>
