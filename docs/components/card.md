@@ -88,3 +88,72 @@ import { CardGroup, Card } from 'chic-ui';
 />;
 </CardGroup>
 ```
+
+### Props
+
+```
+import { Card } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'light'</td>
+    <td>Color of the card</td>
+  </tr>
+  <tr>
+    <td>src</td>
+    <td>string</td>
+    <td></td>
+    <td>Add image to the card</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>string</td>
+    <td></td>
+    <td>Add title to the card</td>
+  </tr>
+   <tr>
+    <td>subTitle</td>
+    <td>string</td>
+    <td></td>
+    <td>Add sub-title to the card</td>
+  </tr>
+  <tr>
+    <td>children</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Pass children</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>string</td>
+    <td></td>
+    <td>Add description to the card</td>
+  </tr>
+  <tr>
+    <td>footer</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Add footer to the card</td>
+  </tr>
+  <tr>
+    <td>href</td>
+    <td>string</td>
+    <td></td>
+    <td>Add links to the card</td>
+  </tr>
+   <tr>
+    <td>hrefText</td>
+    <td>string</td>
+    <td></td>
+    <td>Add texts to links</td>
+  </tr>
+</table>
