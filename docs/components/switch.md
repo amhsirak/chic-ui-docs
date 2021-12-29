@@ -54,3 +54,21 @@ export const Unchecked = () => {
   )
 }
 ```
+
+### Types 
+Use any of the available switches by changing the `type` prop.
+
+```jsx
+import React from 'react';
+import { Switch } from 'chic-ui';
+
+<>
+<Switch checked />
+<Switch checked type="success"/>
+<Switch checked type="secondary"/>
+<Switch checked type="warning"/>
+<Switch checked type="danger"/>
+<Switch checked type="info"/>
+<Switch checked type="light"/>
+</>
+```
