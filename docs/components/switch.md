@@ -86,3 +86,17 @@ import { Switch } from 'chic-ui';
 <Switch checked type="secondary" size="large" />
 </>
 ```
+
+### Padding
+Change the padding of the switches using the `padding` prop.
+
+```jsx
+import React from 'react';
+import { Switch } from 'chic-ui';
+
+<>
+<Switch checked padding="small" />
+<Switch checked type="success" padding="default" />
+<Switch checked type="secondary" padding="large" />
+</>
+```
