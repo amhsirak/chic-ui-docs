@@ -3,6 +3,7 @@ sidebar_position: 10
 ---
 
 # Pagination
+
 Paginations communicate the number of elements (images, articles, commentaries, pages…) that can be loaded within a given context.
 
 ```jsx
@@ -10,19 +11,48 @@ import React from 'react';
 import { Pagination } from 'chic-ui';
 
 const SimplePagination = () => {
-    return (
-        <Pagination
-        pages={4}
-        activeBg='white' 
-        activeColor='purple' 
-        activeHoverColor='blue'
-        whenNextPage={(page) => alert(`On new page`)}
-        whenPreviousPage={(page) => alert(`On previous page`)}
-        whenPageChange={(page) => alert(`Hit page`)}
-        />
-    )
+  return (
+    <Pagination
+      type="secondary"
+      pages={7}
+      activeBg="white"
+      activeColor="black"
+      activeHoverColor="black"
+      whenNextPage={(page) => alert(`whenNextPage page hit, currently in page ${page}`)}
+      whenPreviousPage={(page) => alert(`whenPreviousPage page hit, currently in page ${page}`)}
+      whenPageChange={(page) => alert(`whenPageChange hit, currently in page ${page}`)}
+    />
+  );
 };
 ```
+
+### Add Custom Background
+Use `customBg` prop to customize styling of the pagination.
+
+```jsx
+import React from 'react';
+import { Pagination } from 'chic-ui';
+
+const CustomPagination = () => {
+  return (
+    <Pagination
+      customBg={{
+          bgColor:"gray",
+          hover: "black",
+          color: "yellow"
+      }}
+      pages={4}
+      activeBg="white"
+      activeColor="black"
+      activeHoverColor="black"
+      whenNextPage={(page) => alert(`On new page`)}
+      whenPreviousPage={(page) => alert(`On previous page`)}
+      whenPageChange={(page) => alert(`Hit page`)}
+    />
+  );
+};
+```
+
 
 ### Props
 
