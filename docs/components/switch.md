@@ -112,3 +112,54 @@ import { Switch } from 'chic-ui';
 <Switch checked disabled />
 </>
 ```
+
+### Props
+
+```
+import { Switch } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'default'</td>
+    <td>Color of the switch</td>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td>'small' | 'default' | 'large'</td>
+    <td>'default'</td>
+    <td>Size of the switch</td>
+  </tr>
+  <tr>
+    <td>padding</td>
+    <td>'small' | 'default' | 'large'</td>
+    <td>'default'</td>
+    <td>Change padding of switch's toggle</td>
+  </tr>
+  <tr>
+    <td>checked</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Checked or unchecked switch</td>
+  </tr>
+  <tr>
+    <td>disabled</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Disable a switch</td>
+  </tr>
+  <tr>
+    <td>onChange</td>
+    <td>() => void</td>
+    <td></td>
+    <td>Detects when the value of switch changes</td>
+  </tr>
+</table>
