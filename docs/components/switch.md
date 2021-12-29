@@ -72,3 +72,17 @@ import { Switch } from 'chic-ui';
 <Switch checked type="light"/>
 </>
 ```
+
+### Sizes
+Get small or large switches easily by using the `size` prop.
+
+```jsx
+import React from 'react';
+import { Switch } from 'chic-ui';
+
+<>
+<Switch checked size="small" />
+<Switch checked type="success" size="default" />
+<Switch checked type="secondary" size="large" />
+</>
+```
