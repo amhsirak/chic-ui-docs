@@ -5,10 +5,29 @@ sidebar_position: 10
 # Pagination
 Paginations communicate the number of elements (images, articles, commentaries, pages…) that can be loaded within a given context.
 
+```jsx
+import React from 'react';
+import { Pagination } from 'chic-ui';
+
+const SimplePagination = () => {
+    return (
+        <Pagination
+        pages={4}
+        activeBg='white' 
+        activeColor='purple' 
+        activeHoverColor='blue'
+        whenNextPage={(page) => alert(`On new page`)}
+        whenPreviousPage={(page) => alert(`On previous page`)}
+        whenPageChange={(page) => alert(`Hit page`)}
+        />
+    )
+};
+```
+
 ### Props
 
 ```
-import { Button } from 'chic-ui';
+import { Pagination } from 'chic-ui';
 ```
 
 <table>
