@@ -100,3 +100,15 @@ import { Switch } from 'chic-ui';
 <Switch checked type="secondary" padding="large" />
 </>
 ```
+
+### Disabled
+Use the `disabled` prop to disable any switch.
+
+```jsx
+import React from 'react';
+import { Switch } from 'chic-ui';
+
+<>
+<Switch checked disabled />
+</>
+```
