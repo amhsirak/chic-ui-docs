@@ -49,6 +49,53 @@ export const SimpleSelect = () => {
 };
 ```
 
+### Error
+Use the `error` prop to display select with error.
+
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = ['India', 'Japan', 'Germany', 'Russia'];
+
+export const SimpleSelect = () => {
+  return (
+    <Select
+      error
+      width="200px"
+      data={data}
+      placeholder="Select a country"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
+### Simple Multi Select
+Select multiple values using `multiSelect` prop.
+
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = ['India', 'Japan', 'Germany', 'Russia'];
+
+export const SimpleSelect = () => {
+  return (
+    <Select
+      multiselect
+      width="400px"
+      data={data}
+      placeholder="Select a country"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
+### API
 ```
 import { Select } from 'chic-ui';
 ```
