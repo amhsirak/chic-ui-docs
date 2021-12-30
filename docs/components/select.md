@@ -6,6 +6,49 @@ sidebar_position: 13
 
 ### Props
 
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = ['India', 'Japan', 'Germany', 'Russia'];
+
+export const SimpleSelect = () => {
+  return (
+    <Select
+      width="200px"
+      data={data}
+      placeholder="Select a country"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
+### Disabled
+
+Use the `disabled` prop to disable any select component.
+
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = ['India', 'Japan', 'Germany', 'Russia'];
+
+export const SimpleSelect = () => {
+  return (
+    <Select
+      disabled
+      width="200px"
+      data={data}
+      placeholder="Select a country"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
 ```
 import { Select } from 'chic-ui';
 ```
