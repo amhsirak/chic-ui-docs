@@ -4,8 +4,6 @@ sidebar_position: 13
 
 # Select
 
-### Props
-
 ```jsx
 import React, { useState } from 'react';
 import { Select } from 'chic-ui';
@@ -36,7 +34,7 @@ import { Select } from 'chic-ui';
 const [value, setValue] = useState('');
 const data = ['India', 'Japan', 'Germany', 'Russia'];
 
-export const SimpleSelect = () => {
+export const DisabledSelect = () => {
   return (
     <Select
       disabled
@@ -50,6 +48,7 @@ export const SimpleSelect = () => {
 ```
 
 ### Error
+
 Use the `error` prop to display select with error.
 
 ```jsx
@@ -59,7 +58,7 @@ import { Select } from 'chic-ui';
 const [value, setValue] = useState('');
 const data = ['India', 'Japan', 'Germany', 'Russia'];
 
-export const SimpleSelect = () => {
+export const ErrorSelect = () => {
   return (
     <Select
       error
@@ -73,6 +72,7 @@ export const SimpleSelect = () => {
 ```
 
 ### Simple Multi Select
+
 Select multiple values using `multiSelect` prop.
 
 ```jsx
@@ -82,7 +82,7 @@ import { Select } from 'chic-ui';
 const [value, setValue] = useState('');
 const data = ['India', 'Japan', 'Germany', 'Russia'];
 
-export const SimpleSelect = () => {
+export const SimpleMultiSelect = () => {
   return (
     <Select
       multiselect
@@ -95,7 +95,63 @@ export const SimpleSelect = () => {
 };
 ```
 
+### Complex Object
+
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = [
+  { id: 1, game: 'Hockey' },
+  { id: 2, game: 'Football' },
+  { id: 3, game: 'Tennis' },
+];
+
+export const ComplexObjectSelect = () => {
+  return (
+    <Select
+      width="400px"
+      data={data}
+      dataKey="id"
+      dataName="game"
+      placeholder="Select a sport"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
+### Complex Object Multi Select
+
+```jsx
+import React, { useState } from 'react';
+import { Select } from 'chic-ui';
+
+const [value, setValue] = useState('');
+const data = [
+  { id: 1, game: 'Hockey' },
+  { id: 2, game: 'Football' },
+  { id: 3, game: 'Tennis' },
+];
+
+export const ComplexObjectMultiSelect = () => {
+  return (
+    <Select
+      multiselect
+      width="400px"
+      data={data}
+      dataKey="id"
+      dataName="game"
+      placeholder="Select a sport"
+      onChange={(value) => setValue(value)}
+    />
+  );
+};
+```
+
 ### API
+
 ```
 import { Select } from 'chic-ui';
 ```
