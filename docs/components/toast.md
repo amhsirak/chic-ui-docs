@@ -8,22 +8,6 @@ Toasts can be used to provide response / feedback for certain user actions.
 
 ### Examples
 
-import { toast } from 'chic-ui';
-
-<>
-<button
-onClick={() =>
-toast.open({
-title: 'FAILED TO LOGIN 😔',
-message: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum??? Lorem ipsum.',
-type: 'danger',
-duration: 5000
-})
-} >
-Show toast
-</button>
-</>
-
 ```jsx
 import { toast } from 'chic-ui';
 
