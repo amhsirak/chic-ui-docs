@@ -66,7 +66,7 @@ const config = {
               },
               {
                 label: 'Components',
-                to: '/docs/components/alert',
+                to: '/docs/components/avatar',
               },
             ],
           },
@@ -87,11 +87,11 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Documentation Source',
+                label: 'Documentation Source Code',
                 href: 'https://github.com/karishmashuklaa/chic-ui-docs',
               },
               {
-                label: 'Library Source',
+                label: 'Library Source Code',
                 href: 'https://github.com/karishmashuklaa/chic-ui',
               },
             ],
