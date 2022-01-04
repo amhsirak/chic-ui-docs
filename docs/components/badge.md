@@ -1,10 +1,39 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Badges
+# Badge
 
-### Props
+### Badges with Avatars
+
+import { Badge, Avatar } from 'chic-ui';
+
+<>
+<Badge type="danger" offset={[-13, 11]} count={3} showCount>
+<Avatar src="https://tinyurl.com/yckmvfez" />
+</Badge>
+
+<Badge type="success" offset={[-13, 11]} count={0} showZero>
+<Avatar src="https://tinyurl.com/yckmvfez" />
+</Badge>
+</>
+
+```jsx
+import React from 'react';
+import { Badge, Avatar } from 'chic-ui';
+
+<>
+  <Badge type="danger" offset={[-13, 11]} count={3} showCount>
+    <Avatar src="cat.png" />
+  </Badge>
+
+  <Badge type="success" offset={[-13, 11]} count={0} showZero>
+    <Avatar src="cat.png" />
+  </Badge>
+</>;
+```
+
+### API
 
 ```
 import { Badge } from 'chic-ui';
@@ -31,8 +60,8 @@ import { Badge } from 'chic-ui';
   </tr>
   <tr>
     <td>type</td>
-    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
-    <td>'default'</td>
+    <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'primary'</td>
     <td>Color of the badge</td>
   </tr>
   <tr>
@@ -51,6 +80,6 @@ import { Badge } from 'chic-ui';
     <td>offset</td>
     <td>[number, number]</td>
     <td>[0,0]</td>
-    <td></td>
+    <td>Position of the badge</td>
   </tr>
 </table>
