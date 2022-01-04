@@ -12,21 +12,25 @@ Use any of the available spinners by changing the `type` prop.
 import { Spinner } from 'chic-ui';
 
 <>
+<Spinner className='single' type='light' />
+<Spinner className='single' type='primary' />
 <Spinner className='single' type='secondary' />
 <Spinner className='single' type='danger' />
 <Spinner className='single' type='success' />
 <Spinner className='single' type='warning' />
-<Spinner className='single' type='blue' />
+<Spinner className='single' type='info' />
 </>
 
 ```jsx
 import { Spinner } from 'chic-ui';
 
+<Spinner type='light' />
+<Spinner type='primary' />
 <Spinner type='secondary' />
 <Spinner type='danger' />
 <Spinner type='success' />
 <Spinner type='warning' />
-<Spinner type='blue' />
+<Spinner type='info' />
 ```
 
 ### Sizes 
@@ -44,10 +48,10 @@ import { Spinner } from 'chic-ui';
 <Spinner size={40} />
 ```
 
-### Props
+### API
 
 ```
-import { Button } from 'chic-ui';
+import { Spinner } from 'chic-ui';
 ```
 
 <table>
@@ -59,7 +63,7 @@ import { Button } from 'chic-ui';
   </tr>
   <tr>
     <td>type</td>
-    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
     <td>'light'</td>
     <td>Color of the spinner</td>
   </tr>
