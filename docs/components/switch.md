@@ -1,5 +1,5 @@
 ---
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 # Switch
@@ -9,6 +9,13 @@ The Switch component is useful when we want users to toggle between any value.
 
 ### Checked and Unchecked
 Initial state of the switches can be changed using `checked` prop. By default switches are unchecked.
+
+import { Switch } from 'chic-ui';
+
+<>
+<Switch />
+<Switch checked />
+</>
 
 ```jsx
 import React from 'react';
@@ -58,6 +65,16 @@ export const Unchecked = () => {
 ### Types 
 Use any of the available switches by changing the `type` prop.
 
+<>
+<Switch checked />
+<Switch checked type="success"/>
+<Switch checked type="secondary"/>
+<Switch checked type="warning"/>
+<Switch checked type="danger"/>
+<Switch checked type="info"/>
+<Switch checked type="light"/>
+</>
+
 ```jsx
 import React from 'react';
 import { Switch } from 'chic-ui';
@@ -76,6 +93,12 @@ import { Switch } from 'chic-ui';
 ### Sizes
 Get small or large switches easily by using the `size` prop.
 
+<>
+<Switch checked size="small" />
+<Switch checked type="success" size="default" />
+<Switch checked type="danger" size="large" />
+</>
+
 ```jsx
 import React from 'react';
 import { Switch } from 'chic-ui';
@@ -83,12 +106,18 @@ import { Switch } from 'chic-ui';
 <>
 <Switch checked size="small" />
 <Switch checked type="success" size="default" />
-<Switch checked type="secondary" size="large" />
+<Switch checked type="danger" size="large" />
 </>
 ```
 
 ### Padding
 Change the padding of the switches using the `padding` prop.
+
+<>
+<Switch checked padding="small" />
+<Switch checked type="success" padding="default" />
+<Switch checked type="danger" padding="large" />
+</>
 
 ```jsx
 import React from 'react';
@@ -97,12 +126,16 @@ import { Switch } from 'chic-ui';
 <>
 <Switch checked padding="small" />
 <Switch checked type="success" padding="default" />
-<Switch checked type="secondary" padding="large" />
+<Switch checked type="danger" padding="large" />
 </>
 ```
 
 ### Disabled
 Use the `disabled` prop to disable any switch.
+
+<>
+<Switch checked disabled />
+</>
 
 ```jsx
 import React from 'react';
@@ -113,7 +146,7 @@ import { Switch } from 'chic-ui';
 </>
 ```
 
-### Props
+### API
 
 ```
 import { Switch } from 'chic-ui';
@@ -128,8 +161,8 @@ import { Switch } from 'chic-ui';
   </tr>
   <tr>
     <td>type</td>
-    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
-    <td>'default'</td>
+    <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'primary'</td>
     <td>Color of the switch</td>
   </tr>
   <tr>
