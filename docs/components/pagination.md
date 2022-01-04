@@ -1,10 +1,24 @@
 ---
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 # Pagination
 
 Paginations communicate the number of elements (images, articles, commentaries, pages…) that can be loaded within a given context.
+
+import { Pagination } from 'chic-ui';
+
+<>
+<Pagination
+pages={7}
+activeBg="white"
+activeColor="black"
+activeHoverColor="black"
+whenNextPage={(page) => alert(`whenNextPage page hit, currently on page ${page}`)}
+whenPreviousPage={(page) => alert(`whenPreviousPage page hit, currently on page ${page}`)}
+whenPageChange={(page) => alert(`whenPageChange hit, currently on page ${page}`)}
+/>
+</>
 
 ```jsx
 import React from 'react';
@@ -13,21 +27,50 @@ import { Pagination } from 'chic-ui';
 const SimplePagination = () => {
   return (
     <Pagination
-      type="secondary"
       pages={7}
       activeBg="white"
       activeColor="black"
       activeHoverColor="black"
-      whenNextPage={(page) => alert(`whenNextPage page hit, currently on page ${page}`)}
-      whenPreviousPage={(page) => alert(`whenPreviousPage page hit, currently on page ${page}`)}
-      whenPageChange={(page) => alert(`whenPageChange hit, currently on page ${page}`)}
+      whenNextPage={(page) =>
+        alert(`whenNextPage page hit, currently on page ${page}`)
+      }
+      whenPreviousPage={(page) =>
+        alert(`whenPreviousPage page hit, currently on page ${page}`)
+      }
+      whenPageChange={(page) =>
+        alert(`whenPageChange hit, currently on page ${page}`)
+      }
     />
   );
 };
 ```
 
 ### Add Custom Background
+
 Use `customBg` prop to customize styling of the pagination.
+
+<>
+<Pagination
+customBg={{
+        bgColor: 'gray',
+        hover: 'black',
+        color: 'yellow',
+      }}
+pages={9}
+activeBg="white"
+activeColor="black"
+activeHoverColor="black"
+whenNextPage={(page) =>
+alert(`whenNextPage page hit, currently on page ${page}`)
+}
+whenPreviousPage={(page) =>
+alert(`whenPreviousPage page hit, currently on page ${page}`)
+}
+whenPageChange={(page) =>
+alert(`whenPageChange hit, currently on page ${page}`)
+}
+/>
+</>
 
 ```jsx
 import React from 'react';
@@ -37,48 +80,80 @@ const CustomPagination = () => {
   return (
     <Pagination
       customBg={{
-          bgColor:"gray",
-          hover: "black",
-          color: "yellow"
+        bgColor: 'gray',
+        hover: 'black',
+        color: 'yellow',
       }}
       pages={4}
       activeBg="white"
       activeColor="black"
       activeHoverColor="black"
-       whenNextPage={(page) => alert(`whenNextPage page hit, currently on page ${page}`)}
-      whenPreviousPage={(page) => alert(`whenPreviousPage page hit, currently on page ${page}`)}
-      whenPageChange={(page) => alert(`whenPageChange hit, currently on page ${page}`)}
+      whenNextPage={(page) =>
+        alert(`whenNextPage page hit, currently on page ${page}`)
+      }
+      whenPreviousPage={(page) =>
+        alert(`whenPreviousPage page hit, currently on page ${page}`)
+      }
+      whenPageChange={(page) =>
+        alert(`whenPageChange hit, currently on page ${page}`)
+      }
     />
   );
 };
 ```
+
 ### Start From Zero
+
 Paginations can be started from page number zero using the `startCountInZero` prop.
+
+<>
+<Pagination
+bgType="success"
+pages={7}
+startCountInZero
+activeBg="white"
+activeColor="black"
+activeHoverColor="black"
+whenNextPage={(page) =>
+alert(`whenNextPage page hit, currently on page ${page}`)
+}
+whenPreviousPage={(page) =>
+alert(`whenPreviousPage page hit, currently on page ${page}`)
+}
+whenPageChange={(page) =>
+alert(`whenPageChange hit, currently on page ${page}`)
+}
+/>
+</>
 
 ```jsx
 import React from 'react';
 import { Pagination } from 'chic-ui';
 
-const SimplePagination = () => {
+const StartFromZeroPagination = () => {
   return (
     <Pagination
-      type="success"
+      bgType="success"
       pages={7}
       startCountInZero
       activeBg="white"
       activeColor="black"
       activeHoverColor="black"
-      whenNextPage={(page) => alert(`whenNextPage page hit, currently on page ${page}`)}
-      whenPreviousPage={(page) => alert(`whenPreviousPage page hit, currently on page ${page}`)}
-      whenPageChange={(page) => alert(`whenPageChange hit, currently on page ${page}`)}
+      whenNextPage={(page) =>
+        alert(`whenNextPage page hit, currently on page ${page}`)
+      }
+      whenPreviousPage={(page) =>
+        alert(`whenPreviousPage page hit, currently on page ${page}`)
+      }
+      whenPageChange={(page) =>
+        alert(`whenPageChange hit, currently on page ${page}`)
+      }
     />
   );
 };
 ```
 
-
-
-### Props
+### API
 
 ```
 import { Pagination } from 'chic-ui';
@@ -154,7 +229,7 @@ import { Pagination } from 'chic-ui';
    <tr>
     <td>startCountInZero</td>
     <td>boolean</td>
-    <td></td>
+    <td>false</td>
     <td>Starts count of pages from 0</td>
   </tr>
 </table>
