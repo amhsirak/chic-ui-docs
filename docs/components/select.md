@@ -1,153 +1,171 @@
 ---
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 # Select
 
-```jsx
-import React, { useState } from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = ['India', 'Japan', 'Germany', 'Russia'];
+<>
+<Select
+width="200px"
+data={['India', 'Japan', 'Germany', 'Russia']}
+placeholder="Select a country"
+/>
+</>
 
-export const SimpleSelect = () => {
-  return (
-    <Select
-      width="200px"
-      data={data}
-      placeholder="Select a country"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+```jsx
+import React from 'react';
+import { Select } from 'chic-ui';
+
+<Select
+  width="200px"
+  data={['India', 'Japan', 'Germany', 'Russia']}
+  placeholder="Select a country"
+/>;
 ```
 
 ### Disabled
 
 Use the `disabled` prop to disable any select component.
 
+<>
+<Select
+disabled
+width="200px"
+data={['India', 'Japan', 'Germany', 'Russia']}
+placeholder="Select a country"
+/>
+</>
+
 ```jsx
-import React, { useState } from 'react';
+import React from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = ['India', 'Japan', 'Germany', 'Russia'];
-
-export const DisabledSelect = () => {
-  return (
-    <Select
-      disabled
-      width="200px"
-      data={data}
-      placeholder="Select a country"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+<Select
+  disabled
+  width="200px"
+  data={['India', 'Japan', 'Germany', 'Russia']}
+  placeholder="Select a country"
+/>;
 ```
 
 ### Error
 
 Use the `error` prop to display select with error.
 
+<>
+<Select
+error
+width="200px"
+data={['India', 'Japan', 'Germany', 'Russia']}
+placeholder="Select a country"
+/>
+</>
+
 ```jsx
 import React, { useState } from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = ['India', 'Japan', 'Germany', 'Russia'];
-
-export const ErrorSelect = () => {
-  return (
-    <Select
-      error
-      width="200px"
-      data={data}
-      placeholder="Select a country"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+<Select
+  error
+  width="200px"
+  data={['India', 'Japan', 'Germany', 'Russia']}
+  placeholder="Select a country"
+/>;
 ```
 
 ### Simple Multi Select
 
 Select multiple values using `multiSelect` prop.
 
+<>
+<Select
+multiSelect
+width="600px"
+data={['India', 'Japan', 'Germany', 'Russia']}
+placeholder="Select a country"
+/>
+</>
+
 ```jsx
-import React, { useState } from 'react';
+import React from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = ['India', 'Japan', 'Germany', 'Russia'];
-
-export const SimpleMultiSelect = () => {
-  return (
-    <Select
-      multiselect
-      width="400px"
-      data={data}
-      placeholder="Select a country"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+<Select
+  multiSelect
+  width="200px"
+  data={['India', 'Japan', 'Germany', 'Russia']}
+  placeholder="Select a country"
+/>;
 ```
 
 ### Complex Object
 
+<>
+<Select
+width="200px"
+data={[
+{ id: 1, game: 'Hockey' },
+{ id: 2, game: 'Football' },
+{ id: 3, game: 'Tennis' },
+]}
+dataKey="id"
+dataName="game"
+placeholder="Select a sport"
+/>
+</>
+
 ```jsx
-import React, { useState } from 'react';
+import React from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = [
-  { id: 1, game: 'Hockey' },
-  { id: 2, game: 'Football' },
-  { id: 3, game: 'Tennis' },
-];
-
-export const ComplexObjectSelect = () => {
-  return (
-    <Select
-      width="400px"
-      data={data}
-      dataKey="id"
-      dataName="game"
-      placeholder="Select a sport"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+<Select
+  width="200px"
+  data={[
+    { id: 1, game: 'Hockey' },
+    { id: 2, game: 'Football' },
+    { id: 3, game: 'Tennis' },
+  ]}
+  dataKey="id"
+  dataName="game"
+  placeholder="Select a sport"
+/>;
 ```
 
 ### Complex Object Multi Select
 
+<>
+<Select
+multiSelect
+width="600px"
+data={[
+{ id: 1, game: 'Hockey' },
+{ id: 2, game: 'Football' },
+{ id: 3, game: 'Tennis' },
+]}
+dataKey="id"
+dataName="game"
+placeholder="Select a sport"
+/>
+</>
+
 ```jsx
-import React, { useState } from 'react';
+import React from 'react';
 import { Select } from 'chic-ui';
 
-const [value, setValue] = useState('');
-const data = [
-  { id: 1, game: 'Hockey' },
-  { id: 2, game: 'Football' },
-  { id: 3, game: 'Tennis' },
-];
-
-export const ComplexObjectMultiSelect = () => {
-  return (
-    <Select
-      multiselect
-      width="400px"
-      data={data}
-      dataKey="id"
-      dataName="game"
-      placeholder="Select a sport"
-      onChange={(value) => setValue(value)}
-    />
-  );
-};
+<Select
+  multiSelect
+  width="800px"
+  data={[
+    { id: 1, game: 'Hockey' },
+    { id: 2, game: 'Football' },
+    { id: 3, game: 'Tennis' },
+  ]}
+  dataKey="id"
+  dataName="game"
+  placeholder="Select a sport"
+/>;
 ```
 
 ### API
@@ -185,42 +203,42 @@ import { Select } from 'chic-ui';
     <td>datakey</td>
     <td>string</td>
     <td></td>
-    <td></td>
+    <td>Key for complex objects</td>
   </tr>
   <tr>
     <td>disabled</td>
     <td>boolean</td>
     <td>false</td>
-    <td></td>
+    <td>Disable Select</td>
   </tr>
   <tr>
     <td>multiSelect</td>
     <td>boolean</td>
     <td>false</td>
-    <td></td>
+    <td>Selects multiple values</td>
   </tr>
   <tr>
     <td>dataName</td>
     <td>string</td>
     <td></td>
-    <td></td>
+    <td>Name for complex objects</td>
   </tr>
   <tr>
     <td>error</td>
     <td>boolean</td>
     <td>false</td>
-    <td></td>
+    <td>Error Select</td>
   </tr>
   <tr>
     <td>placeholder</td>
     <td>string</td>
     <td></td>
-    <td></td>
+    <td>Adds placeholder</td>
   </tr>
   <tr>
     <td>onChange</td>
     <td>(value: T | T[]) => void</td>
     <td></td>
-    <td></td>
+    <td>Handles value changes</td>
   </tr>
 </table>
