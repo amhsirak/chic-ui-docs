@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
-# Images
+# Image
 
 Use images having different sizes, shapes and borders.
 
@@ -46,7 +46,7 @@ import { Image } from 'chic-ui';
 <Image src='cat3.png' width='160px' height='130px' outline />
 ```
 
-### Props
+### API
 
 ```
 import { Image } from 'chic-ui';
