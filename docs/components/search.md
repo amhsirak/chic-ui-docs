@@ -31,7 +31,7 @@ const [value, setValue] = useState('');
 />;
 ```
 
-### Props
+### API
 
 ```
 import { Search } from 'chic-ui';

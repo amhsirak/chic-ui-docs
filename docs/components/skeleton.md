@@ -35,7 +35,7 @@ Get skeletons of any shape by changing the `borderRadius` prop.
 <Skeleton borderRadius='30%' />
 ```
 
-### Props
+### API
 
 ```
 import { Skeleton } from 'chic-ui';

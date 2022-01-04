@@ -18,10 +18,22 @@ npm install chic-ui
 
 Avoid importing the entire library at once. Single components should be imported in the following manner 
 
-```shell
+```jsx
 import Spinner from "chic-ui/Spinner";
 // or
 import { Spinner } from "chic-ui";
+```
+
+## Default Styling
+
+To make use of the styles provided by Chic UI, wrap all the components inside the `ThemeProvider`.
+
+```jsx
+import { ThemeProvider, Button } from "chic-ui";
+
+<ThemeProvider>
+<Button> Getting Started! </Button>
+</ThemeProvider>
 ```
 
 And that's it! You can now add Chic UI to your projects 💛

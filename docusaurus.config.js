@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Chic UI',
   tagline: 'Simple and Lightweight UI Component Library for React',
-  url: 'https://karishmashuklaa.github.io/chic-ui-docs',
+  url: 'https://chic-ui.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -97,7 +97,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa/chic-ui'>Chic UI</a>. Built by <a href='https://github.com/karishmashuklaa'>Karishma Shukla</a> and <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa/chic-ui'>Chic UI</a>. Built by <a href='https://github.com/karishmashuklaa'>Karishma</a> and <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
       },
       prism: {
         theme: lightCodeTheme,

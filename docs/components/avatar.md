@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Avatar
@@ -57,7 +57,7 @@ import { Avatar } from 'chic-ui';
 <Avatar src="cat2.png" isActive />
 ```
 
-### Props
+### API
 
 ```
 import { Avatar } from 'chic-ui';
