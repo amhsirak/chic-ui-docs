@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Button
@@ -12,13 +12,15 @@ Use any of the available buttons by changing the `type` prop.
 
 import { Button } from 'chic-ui';
 import { BiWine } from 'react-icons/bi';
+
 <>
-<Button className='single'>Default</Button>
+<Button className='single'>Primary</Button>
 <Button type='secondary' className='single'>Secondary</Button>
 <Button type='warning' className='single'>Warning</Button>
 <Button type='success' className='single'>Success</Button>
-<Button type='danger'className='single'>Danger</Button>
-<Button type='light'className='single'>Light</Button>
+<Button type='danger' className='single'>Danger</Button>
+<Button type='light' className='single'>Light</Button>
+<Button type='info' className='single'>Info</Button>
 </>
 
 ```jsx
@@ -31,6 +33,7 @@ import { Button } from 'chic-ui';
 <Button type='success'>Success</Button>
 <Button type='danger'>Danger</Button>
 <Button type='light'>Light</Button>
+<Button type='info'>Info</Button>
 ```
 
 ### Sizes
@@ -109,7 +112,7 @@ Red wine! <BiWine color="white" />
 </Button>
 ```
 
-### Props
+### API
 
 ```
 import { Button } from 'chic-ui';
@@ -124,8 +127,8 @@ import { Button } from 'chic-ui';
   </tr>
   <tr>
     <td>type</td>
-    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
-    <td>'default'</td>
+    <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'primary'</td>
     <td>Color of the button</td>
   </tr>
   <tr>
