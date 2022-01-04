@@ -1,8 +1,8 @@
 ---
-sidebar_position: 9
+sidebar_position: 8
 ---
 
-# Links
+# Link
 
 Use `href` prop to specify the URL
 
@@ -35,7 +35,7 @@ Disabled Link to Chic-UI Repository
 </Link>
 ```
 
-### Props
+### API
 
 ```
 import { Link } from 'chic-ui';
