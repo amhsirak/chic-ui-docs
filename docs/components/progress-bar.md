@@ -1,11 +1,18 @@
 ---
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 # Progress Bar
 
 Progress bars display an indicator showing the completion/progress of a task.
 
+import { ProgressBar } from 'chic-ui';
+
+<>
+<ProgressBar progress={80} />
+<br />
+<ProgressBar progress={80} type="danger" />
+</>
 
 ```jsx
 import React from 'react';
@@ -18,27 +25,19 @@ import { ProgressBar } from 'chic-ui';
 ```
 
 You can hide the progress using `showProgress` prop.
-```jsx
-import React from 'react';
-import { ProgressBar } from 'chic-ui';
 
 <>
 <ProgressBar progress={80} type="success" showProgress='false' />
 </>
-```
 
-### Animated ProgressBar
 ```jsx
 import React from 'react';
 import { ProgressBar } from 'chic-ui';
 
-<>
-<ProgressBar progress={80} animated />
-<ProgressBar progress={80} type="warning" animated/>
-</>
+<ProgressBar progress={80} type="success" showProgress='false' />
 ```
 
-### Props
+### API
 
 ```
 import { ProgressBar } from 'chic-ui';
@@ -59,8 +58,8 @@ import { ProgressBar } from 'chic-ui';
   </tr>
   <tr>
     <td>type</td>
-    <td>'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
-    <td>'default'</td>
+    <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
+    <td>'primary'</td>
     <td>Type of ProgressBar</td>
   </tr>
   <tr>
