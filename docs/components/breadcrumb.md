@@ -7,8 +7,9 @@ sidebar_position: 3
 A breadcrumb navigation provides links back to each previous page the user navigated through, and shows the user's current location in a website.
 
 import { Breadcrumb } from 'chic-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<>
+<BrowserOnly>
 <Breadcrumb separator="/">
   <div>
     <a href="https://www.google.com">
@@ -26,7 +27,7 @@ import { Breadcrumb } from 'chic-ui';
     </a>
   </div>
 </Breadcrumb>
-</>
+</BrowserOnly>
 
 ```jsx
 import React from 'react';
