@@ -14,6 +14,11 @@ sidebar_position: 1
 npm install chic-ui
 ```
 
+## What is CSS-in-JS?
+CSS-in-JS is a styling technique where JavaScript is used to style components. When this JavaScript is parsed, CSS is generated and attached into the DOM. It allows to abstract CSS to the component level itself, using JavaScript to describe styles in a declarative and maintainable way.
+
+Chic UI uses the CSS-in-JS library <a href="https://styled-components.com/">Styled Components</a>
+
 ## Import Components
 
 Avoid importing the entire library at once. Single components should be imported in the following manner 
