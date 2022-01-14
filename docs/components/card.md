@@ -15,7 +15,7 @@ import { Card, CardGroup } from 'chic-ui';
   footer="Footer"
   href="https://github.com/karishmashuklaa/chic-ui"
   hrefText="Visit site"
-/>;
+/>
 </>
 
 ```jsx
@@ -39,7 +39,7 @@ Use the `src` prop to add an image to a card in the following manner
 
 <>
 <Card
-  type="primary"
+  type="light"
   src="https://tinyurl.com/yckmvfez"
   title="Title"
   subTitle="Subtitle"
@@ -55,7 +55,7 @@ import React from 'react';
 import { Card } from 'chic-ui';
 
 <Card
-  type="primary"
+  type="light"
   src="kitten.jpg"
   title="Title"
   subTitle="Subtitle"
