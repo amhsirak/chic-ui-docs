@@ -82,7 +82,7 @@ Select multiple values using `multiSelect` prop.
 <>
 <Select
 multiSelect
-width="600px"
+width="300px"
 data={['India', 'Japan', 'Germany', 'Russia']}
 placeholder="Select a country"
 />
@@ -94,7 +94,7 @@ import { Select } from 'chic-ui';
 
 <Select
   multiSelect
-  width="200px"
+  width="300px"
   data={['India', 'Japan', 'Germany', 'Russia']}
   placeholder="Select a country"
 />;
@@ -138,7 +138,7 @@ import { Select } from 'chic-ui';
 <>
 <Select
 multiSelect
-width="600px"
+width="300px"
 data={[
 { id: 1, game: 'Hockey' },
 { id: 2, game: 'Football' },
@@ -156,7 +156,7 @@ import { Select } from 'chic-ui';
 
 <Select
   multiSelect
-  width="800px"
+  width="300px"
   data={[
     { id: 1, game: 'Hockey' },
     { id: 2, game: 'Football' },
