@@ -1,8 +1,9 @@
-# Chic UI Documentation 📝 
+# Chic UI Documentation 📝
 
-GitHub Repository of the library: https://github.com/karishmashuklaa/chic-ui
+- ### Chic UI is a simple and lightweight UI Component Library for React built using TypeScript and Styled Components. 🦄
 
-GitHub Repository of the Documentation: https://github.com/karishmashuklaa/chic-ui-docs
+- Repository of the library: https://github.com/karishmashuklaa/chic-ui
+
 
 ### Contributions
 I would be extremely happy to have you contributing to Chic UI. Raise an issue/PR to contribute.
