@@ -30,7 +30,7 @@ import { Divider } from 'chic-ui';
  <Divider type="primary" />
  <Divider type="success" />
  <Divider type="warning" />
-<>
+</>
 ```
 
 ### Dashed Divider
@@ -57,7 +57,7 @@ import { Divider } from 'chic-ui';
  <Divider type="secondary" dashed />
  <Divider type="success" dashed />
  <Divider type="warning" dashed />
-<>
+</>
 ```
 
 ### Custom Thickness
@@ -74,7 +74,7 @@ import { Divider } from 'chic-ui';
 <>
  <Divider type="danger" dashed thickness={2} />
  <Divider type="info" thickness={2} />
-<>
+</>
 ```
 
 ### API

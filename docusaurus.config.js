@@ -97,7 +97,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa/chic-ui'>Chic UI</a>. Built by <a href='https://github.com/karishmashuklaa'>Karishma</a> and <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa'>Karishma Shukla.</a> Built by <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
       },
       prism: {
         theme: lightCodeTheme,
