@@ -88,4 +88,17 @@ import { Avatar } from 'chic-ui';
     <td>false</td>
     <td>Active state for the avatar</td>
   </tr>
+    <tr>
+    <td>width</td>
+    <td>number</td>
+    <td>80</td>
+    <td>Width of avatar</td>
+  </tr>
+    <tr>
+    <td>height</td>
+    <td>number</td>
+    <td>80</td>
+    <td>Height of avatar</td>
+  </tr>
+    
 </table>
