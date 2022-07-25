@@ -166,6 +166,7 @@ import { Form } from 'chic-ui';
     <td></td>
     <td>Placeholder for input</td>
   </tr>
+  <tr>
    <td>rows</td>
     <td>string | number</td>
     <td></td>
@@ -183,6 +184,7 @@ import { Form } from 'chic-ui';
     <td></td>
     <td>Name for input</td>
   </tr>
+  <tr>
    <td>type</td>
     <td>string</td>
     <td>'text'</td>
