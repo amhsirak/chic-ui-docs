@@ -223,3 +223,41 @@ import { Form } from 'chic-ui';
     <td>Value for radio</td>
   </tr>
 </table>
+
+### Form.RadioGroup
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>string</td>
+    <td></td>
+    <td>Name for radio group</td>
+  </tr>
+  <tr>
+    <td>label</td>
+    <td>string</td>
+    <td></td>
+    <td>Label for radio group</td>
+  </tr>
+  <tr>
+    <td>required</td>
+    <td>booleam</td>
+    <td></td>
+    <td>Required radio group</td>
+  </tr>
+   <tr>
+    <td>children (required)</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Children for radio group</td>
+  </tr>
+</table>
