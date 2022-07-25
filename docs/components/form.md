@@ -337,3 +337,18 @@ import { Form } from 'chic-ui';
     <td>Children for checkbox group</td>
   </tr>
 </table>
+
+
+### Form.SubmitButton
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+   <tr>
+    <td>children</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Children for submit button</td>
+  </tr>
+</table>
