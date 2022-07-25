@@ -197,3 +197,29 @@ import { Form } from 'chic-ui';
     <td>Input validation</td>
   </tr>
 </table>
+
+### Form.Radio
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>label (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Label for radio</td>
+  </tr>
+  <tr>
+    <td>value (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Value for radio</td>
+  </tr>
+</table>
