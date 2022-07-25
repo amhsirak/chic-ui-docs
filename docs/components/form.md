@@ -262,7 +262,7 @@ import { Form } from 'chic-ui';
   </tr>
 </table>
 
-### Form.Checkbpx
+### Form.Checkbox
 ```
 import { Form } from 'chic-ui';
 ```
@@ -297,5 +297,43 @@ import { Form } from 'chic-ui';
     <td>string</td>
     <td></td>
     <td>Id for checkbox</td>
+  </tr>
+</table>
+
+### Form.CheckboxGroup
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>string</td>
+    <td></td>
+    <td>Name for checkbox group</td>
+  </tr>
+  <tr>
+    <td>label</td>
+    <td>string</td>
+    <td></td>
+    <td>Label for checkbox group</td>
+  </tr>
+ <tr>
+    <td>required</td>
+    <td>booleam</td>
+    <td></td>
+    <td>Required checkbox group</td>
+  </tr>
+   <tr>
+    <td>children (required)</td>
+    <td>ReactNode</td>
+    <td></td>
+    <td>Children for checkbox group</td>
   </tr>
 </table>
