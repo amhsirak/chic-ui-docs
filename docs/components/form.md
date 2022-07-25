@@ -114,4 +114,30 @@ const SampleForm = () => {
   );
 };
 ```
+### API
+
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>children (required)</td>
+    <td>React Node</td>
+    <td></td>
+    <td>Children of form</td>
+  </tr>
+  <tr>
+    <td>onSubmit</td>
+    <td>Config<FormValues, Partial<FormValues>>['onSubmit']</td>
+    <td></td>
+    <td>Function to call on form submit</td>
+  </tr>
+</table>
 
