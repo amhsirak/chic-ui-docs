@@ -116,6 +116,7 @@ const SampleForm = () => {
 ```
 ### API
 
+### Form
 ```
 import { Form } from 'chic-ui';
 ```
@@ -135,9 +136,62 @@ import { Form } from 'chic-ui';
   </tr>
   <tr>
     <td>onSubmit</td>
-    <td>Config<FormValues, Partial<FormValues>>['onSubmit']</td>
+    <td></td>
     <td></td>
     <td>Function to call on form submit</td>
   </tr>
 </table>
 
+### Form.Input
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>label (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Label for input</td>
+  </tr>
+  <tr>
+    <td>placeholder</td>
+    <td>string</td>
+    <td></td>
+    <td>Placeholder for input</td>
+  </tr>
+   <td>rows</td>
+    <td>string | number</td>
+    <td></td>
+    <td>Number of rows for input</td>
+  </tr>
+  <tr>
+    <td>required</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Required input</td>
+  </tr>
+   <tr>
+    <td>name</td>
+    <td>string</td>
+    <td></td>
+    <td>Name for input</td>
+  </tr>
+   <td>type</td>
+    <td>string</td>
+    <td>'text'</td>
+    <td>Type of input</td>
+  </tr>
+  <tr>
+    <td>validate</td>
+    <td>any[]</td>
+    <td></td>
+    <td>Input validation</td>
+  </tr>
+</table>
