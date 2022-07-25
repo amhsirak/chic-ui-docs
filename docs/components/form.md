@@ -261,3 +261,41 @@ import { Form } from 'chic-ui';
     <td>Children for radio group</td>
   </tr>
 </table>
+
+### Form.Checkbpx
+```
+import { Form } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>name (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Name for checkbox</td>
+  </tr>
+  <tr>
+    <td>label (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Label for checkbox</td>
+  </tr>
+  <tr>
+    <td>value (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Value for checkbox</td>
+  </tr>
+   <tr>
+    <td>id (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Id for checkbox</td>
+  </tr>
+</table>
