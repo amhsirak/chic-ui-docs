@@ -87,17 +87,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Documentation Source Code',
+                label: 'Documentation',
                 href: 'https://github.com/karishmashuklaa/chic-ui-docs',
               },
               {
-                label: 'Library Source Code',
+                label: 'Source Code',
                 href: 'https://github.com/karishmashuklaa/chic-ui',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href='https://github.com/karishmashuklaa'>Karishma Shukla.</a> Built by <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
+        copyright: `Built by <a href='https://github.com/karishmashuklaa/chic-ui/graphs/contributors'>GitHub Contributors</a>`,
       },
       prism: {
         theme: lightCodeTheme,
