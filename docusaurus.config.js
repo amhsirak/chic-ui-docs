@@ -16,7 +16,7 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      sic','@docusaurus/preset-clas
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -25,6 +25,12 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        {
+          gtag: {
+            trackingID: 'G-H5KSS8RL0W',
+            anonymizeIP: true,
+          },
         },
       }),
     ],
