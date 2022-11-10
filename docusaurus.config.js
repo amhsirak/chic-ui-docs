@@ -11,12 +11,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'karishmashuklaa', 
-  projectName: 'chic-ui', 
+  organizationName: 'karishmashuklaa',
+  projectName: 'chic-ui',
 
   presets: [
     [
-      sic','@docusaurus/preset-clas
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -26,11 +26,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        {
-          gtag: {
-            trackingID: 'G-H5KSS8RL0W',
-            anonymizeIP: true,
-          },
+        gtag: {
+          trackingID: 'G-H5KSS8RL0W',
+          anonymizeIP: true,
         },
       }),
     ],
