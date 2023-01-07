@@ -13,3 +13,36 @@ import { Accordion } from 'chic-ui';
  <Accordion header="Header" content="Content" />
 </>
 ```
+
+### API
+
+```
+import { Accordion } from 'chic-ui';
+```
+
+<table>
+  <tr>
+     <th>Name</th>
+     <th>Type</th>
+     <th>Default</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+    <td>header (required)</td>
+    <td>string</td>
+    <td></td>
+    <td>Header of the Accordion</td>
+  </tr>
+  <tr>
+    <td>content</td>
+    <td>string</td>
+    <td></td>
+    <td>Content enclosed inside accordion</td>
+  </tr>
+    <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+</table>
