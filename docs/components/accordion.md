@@ -10,7 +10,7 @@ import React from 'react';
 import { Accordion } from 'chic-ui';
 
 <>
- <Accordion header="Header" content="Content" />
+ <Accordion header="Header" description="Content" />
 </>
 ```
 
@@ -34,7 +34,7 @@ import { Accordion } from 'chic-ui';
     <td>Header of the Accordion</td>
   </tr>
   <tr>
-    <td>content</td>
+    <td>description</td>
     <td>string</td>
     <td></td>
     <td>Content enclosed inside accordion</td>
