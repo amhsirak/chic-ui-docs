@@ -6,12 +6,40 @@ sidebar_position: 20
 
 Alert component can be used to display alerts, notifications and other feedback messages to the user
 
+
+## Basic Usage
+
 ```jsx
 import React from 'react';
 import { Alert } from 'chic-ui';
 
-<></>;
+<>
+<Alert title="You have earned a million dollars!" message="No. Just kidding." />
+</>;
 ```
+
+### Types of Alert
+Use the `type` prop to specify the type of alert. Default type is `primary`
+
+```jsx
+import React from 'react';
+import { Alert } from 'chic-ui';
+
+<>
+<Alert title="Title" message="Message" type="primary" />
+<Alert title="Title" message="Message" type="secondary" />
+<Alert title="Title" message="Message" type="warning" />
+<Alert title="Title" message="Message" type="success" />
+<Alert title="Title" message="Message" type="danger" />
+<Alert title="Title" message="Message" type="info" />
+<Alert title="Title" message="Message" type="light" />
+<>
+</>;
+```
+
+### Dismiss Alerts
+An alert can be dismissed by setting `dismissible` prop to `true`.
+The `onClose` prop specifies a function that will be called when the alert is dismissed
 
 ### API
 
