@@ -8,7 +8,7 @@ Tooltip can display information about an element when hovered over a screen elem
 import React from 'react';
 import { Tooltip } from 'chic-ui';
 
-<Tooltip placement="top" type="secondary" content="Tooltip" />
+<Tooltip placement="top" type="secondary" content="Tooltip" />;
 ```
 
 ### Placement
@@ -20,14 +20,14 @@ import React from 'react';
 import { Tooltip } from 'chic-ui';
 
 <>
-<Tooltip placement="top" type="primary" content="Top Tooltip" />
-<Tooltip placement="bottom" type="primary" content="Bottom Tooltip" />
-<Tooltip placement="right" type="primary" content="Right Tooltip" />
-<Tooltip placement="left" type="primary" content="Left Tooltip" />
-</>
+  <Tooltip placement="top" type="primary" content="Top Tooltip" />
+  <Tooltip placement="bottom" type="primary" content="Bottom Tooltip" />
+  <Tooltip placement="right" type="primary" content="Right Tooltip" />
+  <Tooltip placement="left" type="primary" content="Left Tooltip" />
+</>;
 ```
 
-### Types 
+### Types
 
 Use any of the available tooltips by changing the `type` prop.
 
@@ -84,5 +84,4 @@ import { Tooltip } from 'chic-ui';
     <td></td>
     <td>Override default styling of the component</td>
   </tr>
- 
 </table>
