@@ -82,4 +82,16 @@ import { Badge } from 'chic-ui';
     <td>[0,0]</td>
     <td>Position of the badge</td>
   </tr>
+  <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the component</td>
+  </tr>
 </table>
