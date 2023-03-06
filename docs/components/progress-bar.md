@@ -19,9 +19,9 @@ import React from 'react';
 import { ProgressBar } from 'chic-ui';
 
 <>
-<ProgressBar progress={80} />
-<ProgressBar progress={80} type="danger" />
-</>
+  <ProgressBar progress={80} />
+  <ProgressBar progress={80} type="danger" />
+</>;
 ```
 
 You can hide the progress using `showProgress` prop.
@@ -34,7 +34,7 @@ You can hide the progress using `showProgress` prop.
 import React from 'react';
 import { ProgressBar } from 'chic-ui';
 
-<ProgressBar progress={80} type="success" showProgress='false' />
+<ProgressBar progress={80} type="success" showProgress="false" />;
 ```
 
 ### API
@@ -74,8 +74,16 @@ import { ProgressBar } from 'chic-ui';
     <td>false</td>
     <td>Add animation to the ProgressBar</td>
   </tr>
+   <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the component</td>
+  </tr>
 </table>
-
-
-
-
