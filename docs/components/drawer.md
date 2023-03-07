@@ -46,7 +46,7 @@ import { Drawer } from 'chic-ui';
     <td>size</td>
     <td>'default' | 'large'</td>
     <td>'default'</td>
-    <td>Size of the drawer</td>
+    <td>Size of the drawer. 'default` size is 378px and `large` size is 736px</td>
   </tr>
   <tr>
     <td>closable</td>
