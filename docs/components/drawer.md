@@ -120,4 +120,22 @@ import { Drawer } from 'chic-ui';
     <td></td>
     <td>Override default styling of the component</td>
   </tr>
+  <tr>
+    <td>headerStyle</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the header</td>
+  </tr>
+  <tr>
+    <td>bodyStyle</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the contents of the drawer</td>
+  </tr>
+  <tr>
+    <td>footerStyle</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the footer</td>
+  </tr>
 </table>
