@@ -2,6 +2,10 @@
 
 Circular Progress bars serve the same purpose as simple progress bars, i.e display an indicator showing the completion/progress of a task.
 
+import { CircularProgressBar } from 'chic-ui';
+
+<CircularProgressBar progress={30} type="primary" showProgress={true} />;
+
 ```jsx
 import React from 'react';
 import { CircularProgressBar } from 'chic-ui';
