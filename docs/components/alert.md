@@ -30,6 +30,16 @@ import { Alert } from 'chic-ui';
 
 Use the `type` prop to specify the type of alert. Default type is `primary`
 
+<>
+<Alert title="Title" message="Message" type="primary" />
+<Alert title="Title" message="Message" type="secondary" />
+<Alert title="Title" message="Message" type="warning" />
+<Alert title="Title" message="Message" type="success" />
+<Alert title="Title" message="Message" type="danger" />
+<Alert title="Title" message="Message" type="info" />
+<Alert title="Title" message="Message" type="light" />
+</>
+
 ```jsx
 import React from 'react';
 import { Alert } from 'chic-ui';
