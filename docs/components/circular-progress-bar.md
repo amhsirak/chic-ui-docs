@@ -17,9 +17,9 @@ You can hide the progress using `showProgress` prop.
 
 ```jsx
 import React from 'react';
-import { ProgressBar } from 'chic-ui';
+import { CircularProgressBar } from 'chic-ui';
 
-<ProgressBar progress={80} type="success" showProgress={false} />;
+<CircularProgressBar progress={80} type="success" showProgress={false} />;
 ```
 
 ### API
