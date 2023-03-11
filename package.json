@@ -21,7 +21,7 @@
     "@docusaurus/preset-classic": "^2.2.0",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
-    "chic-ui": "^1.0.7",
+    "chic-ui": "^1.0.12",
     "clsx": "^1.1.1",
     "docusaurus": "^1.14.7",
     "file-loader": "^6.2.0",
