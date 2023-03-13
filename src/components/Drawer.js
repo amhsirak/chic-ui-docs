@@ -9,7 +9,7 @@ export function BasicDrawer() {
     return (
         <BrowserOnly>
             {() => (
-                <>
+                <div>
                     <button onClick={handleClose}>Open Drawer</button>
                     <Drawer
                         open={open}
@@ -24,7 +24,8 @@ export function BasicDrawer() {
                         <div> Some contents...</div>
                         <div> Some contents...</div>
                     </Drawer>
-                </>
+                </div>
             )}
-            );
+        </BrowserOnly>
+    );
 }
