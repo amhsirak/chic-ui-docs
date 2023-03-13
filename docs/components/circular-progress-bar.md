@@ -4,7 +4,7 @@ Circular Progress bars serve the same purpose as simple progress bars, i.e displ
 
 import { CircularProgressBar } from 'chic-ui';
 
-<CircularProgressBar progress={30} type="primary" showProgress={true} />;
+<CircularProgressBar progress={30} type="primary" showProgress={true} />
 
 ```jsx
 import React from 'react';
@@ -12,6 +12,8 @@ import { CircularProgressBar } from 'chic-ui';
 
 <CircularProgressBar progress={30} type="primary" showProgress={true} />;
 ```
+
+### Hidden Progress
 
 You can hide the progress using `showProgress` prop.
 
