@@ -2,6 +2,10 @@
 
 ### Example
 
+import { BasicDrawer } from '@site/src/components/Drawer';
+
+<BasicDrawer />
+
 ```jsx
 import { Drawer } from 'chic-ui';
 
