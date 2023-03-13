@@ -61,6 +61,30 @@ import { Alert } from 'chic-ui';
 An alert can be dismissed by setting `dismissible` prop to `true`.
 The `onClose` prop specifies a function that will be called when the alert is dismissed
 
+
+```jsx
+import { Alert } from 'chic-ui';
+export function DismissAlerts(){
+    const [show, setShow] = React.useState(true);
+  
+    const onClick = useCallback(() => {
+      setShow((prev) => !prev);
+    }, []);
+  
+    return (
+      <Alert
+        title={'Title'}
+        message={'message'}
+        dismissible
+        type="primary"
+        show={show}
+        onClose={onClick}
+      />
+    );
+  };
+
+```
+
 ### API
 
 ```
