@@ -95,8 +95,6 @@ export function DismissAlerts(){
 import { Alert } from 'chic-ui';
 ```
 
-<!-- TODO : show prop -->
-
 <table>
   <tr>
      <th>Name</th>
@@ -127,6 +125,12 @@ import { Alert } from 'chic-ui';
     <td>boolean</td>
     <td>false</td>
     <td>Boolean flag to allow dismissing the alert</td>
+  </tr>
+  <tr>
+    <td>show</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Boolean flag to show the alert</td>
   </tr>
    <tr>
     <td>onClose</td>
