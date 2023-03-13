@@ -2,6 +2,10 @@
 
 ### Basic Usage
 
+import BasicBackdrop from '@site/src/components/BasicBackdrop';
+
+<BasicBackdrop />
+
 ```jsx
 import { Button, Backdrop } from 'chic-ui';
 
@@ -45,10 +49,10 @@ import { Backdrop } from 'chic-ui';
 
 <table>
   <tr>
-     <th>Name</th>
-     <th>Type</th>
-     <th>Default</th>
-     <th>Description</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td>visible</td>
@@ -62,7 +66,7 @@ import { Backdrop } from 'chic-ui';
     <td></td>
     <td>Color of backdrop</td>
   </tr>
-   <tr>
+  <tr>
     <td>onClick</td>
     <td>function</td>
     <td></td>
@@ -80,7 +84,7 @@ import { Backdrop } from 'chic-ui';
     <td></td>
     <td>Override default styling of the component</td>
   </tr>
-   <tr>
+  <tr>
     <td>children</td>
     <td>ReactNode</td>
     <td></td>

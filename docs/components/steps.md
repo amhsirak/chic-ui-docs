@@ -4,6 +4,16 @@ Steps is a type of navigation bar that guides users through numbered steps
 
 ### Basic Usage
 
+import { Steps } from 'chic-ui';
+<>
+<Steps active={1} direction="horizontal" divider="" type="primary">
+<Step subTitle="Step one details" title="Step One" />
+<Step subTitle="Step two details" title="Step Two" />
+<Step subTitle="Step three details" title="Step Three" />
+<Step subTitle="Step four details" title="Step Four" />
+</Steps>
+</>
+
 ```jsx
 <Steps active={1} direction="horizontal" divider="" type="primary">
   <Step subTitle="Step one details" title="Step One" />
