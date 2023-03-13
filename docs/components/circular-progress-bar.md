@@ -1,46 +1,37 @@
----
-sidebar_position: 10
----
+# Circular Progress Bar
 
-# Progress Bar
+Circular Progress bars serve the same purpose as simple progress bars, i.e display an indicator showing the completion/progress of a task.
 
-Progress bars display an indicator showing the completion/progress of a task.
+import { CircularProgressBar } from 'chic-ui';
 
-import { ProgressBar } from 'chic-ui';
-
-<>
-<ProgressBar progress={80} />
-<br />
-<ProgressBar progress={80} type="danger" />
-</>
+<CircularProgressBar progress={30} type="primary" showProgress={true} />
 
 ```jsx
 import React from 'react';
-import { ProgressBar } from 'chic-ui';
+import { CircularProgressBar } from 'chic-ui';
 
-<>
-  <ProgressBar progress={80} />
-  <ProgressBar progress={80} type="danger" />
-</>;
+<CircularProgressBar progress={30} type="primary" showProgress={true} />;
 ```
+
+### Hidden Progress
 
 You can hide the progress using `showProgress` prop.
 
 <>
-<ProgressBar progress={80} type="success" showProgress='false' />
+<CircularProgressBar progress={80} type="success" showProgress={false} />
 </>
 
 ```jsx
 import React from 'react';
-import { ProgressBar } from 'chic-ui';
+import { CircularProgressBar } from 'chic-ui';
 
-<ProgressBar progress={80} type="success" showProgress="false" />;
+<CircularProgressBar progress={80} type="success" showProgress={false} />;
 ```
 
 ### API
 
 ```
-import { ProgressBar } from 'chic-ui';
+import { CircularProgressBar } from 'chic-ui';
 ```
 
 <table>
@@ -60,7 +51,7 @@ import { ProgressBar } from 'chic-ui';
     <td>type</td>
     <td>'primary' | 'secondary' | 'danger' | 'warning' | 'success' | 'info' | 'light'</td>
     <td>'primary'</td>
-    <td>Type of ProgressBar</td>
+    <td>Type of Circular Progress Bar</td>
   </tr>
   <tr>
     <td>showProgress</td>
@@ -69,12 +60,6 @@ import { ProgressBar } from 'chic-ui';
     <td>Show progress number</td>
   </tr>
   <tr>
-    <td>animated</td>
-    <td>boolean</td>
-    <td>false</td>
-    <td>Add animation to the ProgressBar</td>
-  </tr>
-   <tr>
     <td>className</td>
     <td>string</td>
     <td></td>

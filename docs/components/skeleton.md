@@ -3,9 +3,11 @@ sidebar_position: 13
 ---
 
 # Skeleton
+
 Skeletons can be used as a preview for your content before data gets loaded.
 
 ### Width and Height
+
 Change the dimensions of the skeleton using the `width` and `height` props.
 
 import { Skeleton } from 'chic-ui';
@@ -23,6 +25,7 @@ import { Skeleton } from 'chic-ui';
 ```
 
 ### Shapes
+
 Get skeletons of any shape by changing the `borderRadius` prop.
 
 <>
@@ -65,5 +68,17 @@ import { Skeleton } from 'chic-ui';
     <td>string</td>
     <td>'none'</td>
     <td>Sets the border radius for the Skeleton</td>
+  </tr>
+   <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the component</td>
   </tr>
 </table>

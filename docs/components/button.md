@@ -173,4 +173,16 @@ import { Button } from 'chic-ui';
     <td></td>
     <td>If `as` is added, button becomes a custom html node specified in `as`</td>
   </tr>
+   <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the component</td>
+  </tr>
 </table>

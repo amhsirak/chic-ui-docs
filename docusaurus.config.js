@@ -11,8 +11,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'karishmashuklaa', 
-  projectName: 'chic-ui', 
+  organizationName: 'karishmashuklaa',
+  projectName: 'chic-ui',
 
   presets: [
     [
@@ -25,6 +25,10 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-H5KSS8RL0W',
+          anonymizeIP: true,
         },
       }),
     ],

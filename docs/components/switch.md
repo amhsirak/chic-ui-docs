@@ -8,6 +8,7 @@ Switches can toggle the state of a single setting on or off.
 The Switch component is useful when we want users to toggle between any value.
 
 ### Checked and Unchecked
+
 Initial state of the switches can be changed using `checked` prop. By default switches are unchecked.
 
 import { Switch } from 'chic-ui';
@@ -22,11 +23,13 @@ import React from 'react';
 import { Switch } from 'chic-ui';
 
 <>
-<Switch />
-<Switch checked />
-</>
+  <Switch />
+  <Switch checked />
+</>;
 ```
+
 ### Toggle between values
+
 Use `useState` hook to make the switches interactive.
 
 ```jsx
@@ -45,24 +48,25 @@ function useSwitch(initial: boolean): [boolean, () => void] {
 
 export const Checked = () => {
   const [checked, onChange] = useSwitch(true);
-  return(
+  return (
     <>
-     <Switch checked={checked} onChange={onChange} type="secondary" />
+      <Switch checked={checked} onChange={onChange} type="secondary" />
     </>
-  )
-}
+  );
+};
 
 export const Unchecked = () => {
   const [checked, onChange] = useSwitch(false);
-  return(
+  return (
     <>
-     <Switch checked={checked} onChange={onChange} type="danger" />
+      <Switch checked={checked} onChange={onChange} type="danger" />
     </>
-  )
-}
+  );
+};
 ```
 
-### Types 
+### Types
+
 Use any of the available switches by changing the `type` prop.
 
 <>
@@ -80,17 +84,18 @@ import React from 'react';
 import { Switch } from 'chic-ui';
 
 <>
-<Switch checked />
-<Switch checked type="success"/>
-<Switch checked type="secondary"/>
-<Switch checked type="warning"/>
-<Switch checked type="danger"/>
-<Switch checked type="info"/>
-<Switch checked type="light"/>
-</>
+  <Switch checked />
+  <Switch checked type="success" />
+  <Switch checked type="secondary" />
+  <Switch checked type="warning" />
+  <Switch checked type="danger" />
+  <Switch checked type="info" />
+  <Switch checked type="light" />
+</>;
 ```
 
 ### Sizes
+
 Get small or large switches easily by using the `size` prop.
 
 <>
@@ -104,13 +109,14 @@ import React from 'react';
 import { Switch } from 'chic-ui';
 
 <>
-<Switch checked size="small" />
-<Switch checked type="success" size="default" />
-<Switch checked type="danger" size="large" />
-</>
+  <Switch checked size="small" />
+  <Switch checked type="success" size="default" />
+  <Switch checked type="danger" size="large" />
+</>;
 ```
 
 ### Padding
+
 Change the padding of the switches using the `padding` prop.
 
 <>
@@ -124,13 +130,14 @@ import React from 'react';
 import { Switch } from 'chic-ui';
 
 <>
-<Switch checked padding="small" />
-<Switch checked type="success" padding="default" />
-<Switch checked type="danger" padding="large" />
-</>
+  <Switch checked padding="small" />
+  <Switch checked type="success" padding="default" />
+  <Switch checked type="danger" padding="large" />
+</>;
 ```
 
 ### Disabled
+
 Use the `disabled` prop to disable any switch.
 
 <>
@@ -142,8 +149,8 @@ import React from 'react';
 import { Switch } from 'chic-ui';
 
 <>
-<Switch checked disabled />
-</>
+  <Switch checked disabled />
+</>;
 ```
 
 ### API
@@ -194,5 +201,17 @@ import { Switch } from 'chic-ui';
     <td>() => void</td>
     <td></td>
     <td>Detects when the value of switch changes</td>
+  </tr>
+   <tr>
+    <td>className</td>
+    <td>string</td>
+    <td></td>
+    <td>Provide external classnames to the component</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>React.CSSProperties</td>
+    <td></td>
+    <td>Override default styling of the component</td>
   </tr>
 </table>
