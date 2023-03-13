@@ -31,6 +31,10 @@ const BasicBackdrop = () => {
 
 ### Custom Colored Backdrop
 
+import { CustomBackdrop } from '@site/src/components/Backdrop';
+
+<CustomBackdrop />
+
 ```jsx
 <Backdrop color="red" />
 ```
