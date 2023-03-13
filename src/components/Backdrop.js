@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Backdrop } from 'chic-ui';
 
-export default function BasicBackdrop() {
+export function BasicBackdrop() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);

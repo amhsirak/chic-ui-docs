@@ -2,7 +2,7 @@
 
 ### Basic Usage
 
-import BasicBackdrop from '@site/src/components/BasicBackdrop';
+import { BasicBackdrop } from '@site/src/components/Backdrop';
 
 <BasicBackdrop />
 
