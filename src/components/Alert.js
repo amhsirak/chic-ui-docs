@@ -4,7 +4,7 @@ import { Alert } from 'chic-ui';
 export function DismissAlerts(){
     const [show, setShow] = React.useState(true);
   
-    const onClick = useCallback(() => {
+    const onClick = React.useCallback(() => {
       setShow((prev) => !prev);
     }, []);
   
