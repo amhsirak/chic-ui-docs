@@ -11,3 +11,14 @@ export function Example() {
         </Steps>
     );
 }
+
+export function VerticalSteps() {
+    return (
+        <Steps active={1} type="primary" direction="vertical">
+            <Steps.Step title="Step One" subTitle="Step one details" />
+            <Steps.Step title="Step Two" subTitle="Step two details" />
+            <Steps.Step title="Step Three" subTitle="Step three details" />
+            <Steps.Step title="Step Four" subTitle="Step four details" />
+        </Steps>
+    );
+}
