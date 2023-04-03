@@ -2,7 +2,13 @@
 
 ## Example
 
-import { Example, VerticalSteps, ResponsiveSteps, IconSteps, SubtitleSteps } from '@site/src/components/Steps';
+import {
+  Example,
+  VerticalSteps,
+  ResponsiveSteps,
+  IconSteps,
+  SubtitleSteps,
+} from '@site/src/components/Steps';
 
 <Example />
 
@@ -10,21 +16,23 @@ import { Example, VerticalSteps, ResponsiveSteps, IconSteps, SubtitleSteps } fro
 <br />
 
 ```jsx
-import React from 'react'
-import { Steps } from 'chic-ui'
+import React from 'react';
+import { Steps } from 'chic-ui';
 
 export function Example() {
-    return (
-        <Steps active={1} type="primary" direction="horizontal">
-            <Steps.Step title="Step One" subTitle="Step one details" />
-            <Steps.Step title="Step Two" subTitle="Step two details" />
-            <Steps.Step title="Step Three" subTitle="Step three details" />
-            <Steps.Step title="Step Four" subTitle="Step four details" />
-        </Steps>
-    );
+  return (
+    <Steps active={1} type="primary" direction="horizontal">
+      <Steps.Step title="Step One" subTitle="Step one details" />
+      <Steps.Step title="Step Two" subTitle="Step two details" />
+      <Steps.Step title="Step Three" subTitle="Step three details" />
+      <Steps.Step title="Step Four" subTitle="Step four details" />
+    </Steps>
+  );
 }
 ```
+
 ## Direction
+
 The step component can have two directions : `horizontal` or `vertical`
 
 <VerticalSteps />
@@ -33,22 +41,22 @@ The step component can have two directions : `horizontal` or `vertical`
 <br />
 
 ```jsx
-import React from 'react'
-import { Steps } from 'chic-ui'
+import React from 'react';
+import { Steps } from 'chic-ui';
 
 export function VerticalSteps() {
-    return (
-        <Steps active={1} type="primary" direction="vertical">
-            <Steps.Step title="Step One" subTitle="Step one details" />
-            <Steps.Step title="Step Two" subTitle="Step two details" />
-            <Steps.Step title="Step Three" subTitle="Step three details" />
-            <Steps.Step title="Step Four" subTitle="Step four details" />
-        </Steps>
-    );
+  return (
+    <Steps active={1} type="primary" direction="vertical">
+      <Steps.Step title="Step One" subTitle="Step one details" />
+      <Steps.Step title="Step Two" subTitle="Step two details" />
+      <Steps.Step title="Step Three" subTitle="Step three details" />
+      <Steps.Step title="Step Four" subTitle="Step four details" />
+    </Steps>
+  );
 }
 ```
 
-## Responsive 
+## Responsive
 
 <ResponsiveSteps />
 
@@ -56,18 +64,18 @@ export function VerticalSteps() {
 <br />
 
 ```jsx
-import React from 'react'
-import { Steps } from 'chic-ui'
+import React from 'react';
+import { Steps } from 'chic-ui';
 
 export function ResponsiveSteps() {
-    return (
-        <Steps active={1} type="primary" responsive="true">
-            <Steps.Step title="Step One" subTitle="Step one details" />
-            <Steps.Step title="Step Two" subTitle="Step two details" />
-            <Steps.Step title="Step Three" subTitle="Step three details" />
-            <Steps.Step title="Step Four" subTitle="Step four details" />
-        </Steps>
-    );
+  return (
+    <Steps active={1} type="primary" responsive="true">
+      <Steps.Step title="Step One" subTitle="Step one details" />
+      <Steps.Step title="Step Two" subTitle="Step two details" />
+      <Steps.Step title="Step Three" subTitle="Step three details" />
+      <Steps.Step title="Step Four" subTitle="Step four details" />
+    </Steps>
+  );
 }
 ```
 
@@ -79,18 +87,18 @@ export function ResponsiveSteps() {
 <br />
 
 ```jsx
-import React from 'react'
-import { Steps } from 'chic-ui'
+import React from 'react';
+import { Steps } from 'chic-ui';
 
 export function IconSteps() {
-    return (
-        <Steps active={1} type="primary">
-            <Steps.Step title="Step One" icon={HomeIcon} />
-            <Steps.Step title="Step Two" />
-            <Steps.Step title="Step Three"  />
-            <Steps.Step title="Step Four"  />
-        </Steps>
-    );
+  return (
+    <Steps active={1} type="primary">
+      <Steps.Step title="Step One" icon={HomeIcon} />
+      <Steps.Step title="Step Two" />
+      <Steps.Step title="Step Three" />
+      <Steps.Step title="Step Four" />
+    </Steps>
+  );
 }
 ```
 
@@ -103,17 +111,17 @@ export function IconSteps() {
 <br />
 
 ```jsx
-import React from 'react'
-import { Steps } from 'chic-ui'
+import React from 'react';
+import { Steps } from 'chic-ui';
 
 export function SubtitleSteps() {
-    return (
-        <Steps active={1} type="primary">
-            <Steps.Step title="Step One" subTitle="Step one details"  />
-            <Steps.Step title="Step Two" subTitle="Step two details" />
-            <Steps.Step title="Step Three" subTitle="Step three details"  />
-            <Steps.Step title="Step Four" subTitle="Step four details"  />
-        </Steps>
-    );
+  return (
+    <Steps active={1} type="primary">
+      <Steps.Step title="Step One" subTitle="Step one details" />
+      <Steps.Step title="Step Two" subTitle="Step two details" />
+      <Steps.Step title="Step Three" subTitle="Step three details" />
+      <Steps.Step title="Step Four" subTitle="Step four details" />
+    </Steps>
+  );
 }
 ```
