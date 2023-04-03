@@ -74,3 +74,22 @@ export function ResponsiveSteps() {
 ## Custom Icon
 
 <IconSteps />
+
+<br />
+<br />
+
+```jsx
+import React from 'react'
+import { Steps } from 'chic-ui'
+
+export function IconSteps() {
+    return (
+        <Steps active={1} type="primary">
+            <Steps.Step title="Step One" icon={HomeIcon} />
+            <Steps.Step title="Step Two" />
+            <Steps.Step title="Step Three"  />
+            <Steps.Step title="Step Four"  />
+        </Steps>
+    );
+}
+```
