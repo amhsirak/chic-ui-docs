@@ -37,12 +37,12 @@ export function ResponsiveSteps() {
 export function IconSteps() {
     return (
         <Steps active={1} type="primary">
-            <Steps.Step title="Step One"  icon={
+            <Steps.Step title="Step One" icon={
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="black" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             } />
-            <Steps.Step title="Step Two"  />
-            <Steps.Step title="Step Three"   />
-            <Steps.Step title="Step Four"   />
+            <Steps.Step title="Step Two" />
+            <Steps.Step title="Step Three" />
+            <Steps.Step title="Step Four" />
         </Steps>
     );
 }
@@ -50,10 +50,10 @@ export function IconSteps() {
 export function SubtitleSteps() {
     return (
         <Steps active={1} type="primary">
-            <Steps.Step title="Step One" subTitle="Step one details"  />
+            <Steps.Step title="Step One" subTitle="Step one details" />
             <Steps.Step title="Step Two" subTitle="Step two details" />
-            <Steps.Step title="Step Three" subTitle="Step three details"  />
-            <Steps.Step title="Step Four" subTitle="Step four details"  />
+            <Steps.Step title="Step Three" subTitle="Step three details" />
+            <Steps.Step title="Step Four" subTitle="Step four details" />
         </Steps>
     );
 }
